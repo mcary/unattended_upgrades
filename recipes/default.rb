@@ -7,4 +7,6 @@ package "mailutils"
 
 package "unattended-upgrades"
 
-cookbook_file "/etc/apt/apt.conf.d/50unattended-upgrades"
+cookbook_file "/etc/apt/apt.conf.d/50unattended-upgrades" do
+  mode "444"
+end
