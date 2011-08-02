@@ -7,6 +7,9 @@ package "mailutils"
 
 package "unattended-upgrades"
 
-cookbook_file "/etc/apt/apt.conf.d/50unattended-upgrades" do
+template "/etc/apt/apt.conf.d/50unattended-upgrades" do
   mode "444"
+  variables(
+    :upgrade_email => node[:unattended_upgrades][:upgrade_email]
+  )
 end
