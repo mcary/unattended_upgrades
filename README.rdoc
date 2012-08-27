@@ -16,3 +16,6 @@ The following node attributes are passed to the APT configuration template:
 
   include_recipe "unattended_upgrades"
 
+= CONTRIBUTING:
+
+https://github.com/mcary/unattended_upgrades
