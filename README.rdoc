@@ -1,6 +1,6 @@
 = DESCRIPTION:
 
-Configure APT to do unattended upgrades as fixes are released.
+Configure APT to do unattended upgrades as security fixes are released.
 
 = REQUIREMENTS:
 
