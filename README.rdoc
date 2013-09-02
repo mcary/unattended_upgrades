@@ -11,6 +11,7 @@ Ubuntu or maybe Debian
 The following node attributes are passed to the APT configuration template:
 
 * unattended_upgrades[:upgrade_email] - email to receive notifications
+* unattended_upgrades[:auto_reboot] - automatically reboot without confirmation if necessary (default false)
 
 = USAGE:
 
