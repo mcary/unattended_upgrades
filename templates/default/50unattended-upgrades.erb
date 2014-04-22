@@ -43,9 +43,9 @@ Unattended-Upgrade::Package-Blacklist {
 // If empty or unset then no email is sent, make sure that you
 // have a working mail setup on your system. The package 'mailx'
 // must be installed or anything that provides /usr/bin/mail.
-Unattended-Upgrade::Mail "<%= @upgrade_email %>";
+Unattended-Upgrade::Mail "<%= {node['unattended_upgrades']['upgrade_email']} %>";
 
 
 // Automatically reboot *WITHOUT CONFIRMATION* if a
 // the file /var/run/reboot-required is found after the upgrade
-Unattended-Upgrade::Automatic-Reboot "<%= @auto_reboot ? 'true' : 'false' %>";
+Unattended-Upgrade::Automatic-Reboot "<%= {node['unattended_upgrades']['auto_reboot']} %>";
