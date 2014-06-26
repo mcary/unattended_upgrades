@@ -4,7 +4,9 @@ Configure APT to do unattended upgrades as security fixes are released.
 
 = REQUIREMENTS:
 
-Ubuntu or maybe Debian
+Ubuntu or maybe Debian.
+
+Tested on Ubuntu 10.04 LTS.
 
 = ATTRIBUTES:
 
@@ -20,3 +22,8 @@ The following node attributes are passed to the APT configuration template:
 = CONTRIBUTING:
 
 https://github.com/mcary/unattended_upgrades
+
+== Testing:
+
+  $ vagrant up
+  $ vagrant ssh -- sudo sh /vagrant/test.sh
