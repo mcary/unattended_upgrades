@@ -1,8 +1,8 @@
-= DESCRIPTION:
+= Description
 
 Configure APT to do unattended upgrades as security fixes are released.
 
-= REQUIREMENTS:
+= Requirements
 
 Ubuntu or maybe Debian.
 
@@ -12,22 +12,22 @@ Tested on:
 * Ubuntu 12.04 LTS wtih chef-client 10.14.2
 * Ubuntu 14.04 LTS with chef-client 11.12.2
 
-= ATTRIBUTES:
+= Attributes
 
 The following node attributes are passed to the APT configuration template:
 
 * unattended_upgrades[:upgrade_email] - email to receive notifications
 * unattended_upgrades[:auto_reboot] - automatically reboot without confirmation if necessary (default false)
 
-= USAGE:
+= Usage
 
   include_recipe "unattended_upgrades"
 
-= CONTRIBUTING:
+= Contributing
 
 https://github.com/mcary/unattended_upgrades
 
-== Testing:
+== Testing
 
   $ vagrant up $ver
   $ vagrant ssh $ver -- sudo sh /vagrant/test.sh
