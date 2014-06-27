@@ -3,7 +3,7 @@ maintainer_email "marcel@oak.homeunix.org"
 license          "Apache 2.0"
 description      "Installs/Configures APT unattended_upgrades"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
-version          "0.1.2"
+version          "0.2.0"
 name             "unattended_upgrades"
 
 %w{ ubuntu debian }.each do |os|
