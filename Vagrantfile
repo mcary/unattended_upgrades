@@ -16,6 +16,26 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # doesn't already exist on the user's system.
   config.vm.box_url = "http://files.vagrantup.com/lucid64.box"
 
+  config.vm.define "10.04", primary: true do |config|
+    # Just the global config
+  end
+
+  config.vm.define "12.04", autostart: false do |config|
+    config.vm.box = "hashicorp/precise64"
+    config.vm.box_url = "https://vagrantcloud.com/hashicorp/precise64"
+  end
+
+  config.vm.define "14.04", autostart: false do |config|
+    config.vm.box = "phusion/trusty64"
+    config.vm.box_url = "https://oss-binaries.phusionpassenger.com/vagrant/boxes/latest/ubuntu-14.04-amd64-vbox.box"
+  end
+
+  # Won't boot:
+  #config.vm.define "14.04", autostart: false do |config|
+  #  config.vm.box = "wulverene/ubuntu64" # Trusty, 14.04
+  #  config.vm.box_url = "https://vagrantcloud.com/wulverene/ubuntu64"
+  #end
+
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
