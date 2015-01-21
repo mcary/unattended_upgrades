@@ -18,6 +18,7 @@ The following node attributes are passed to the APT configuration template:
 
 * unattended_upgrades[:upgrade_email] - email to receive notifications
 * unattended_upgrades[:auto_reboot] - automatically reboot without confirmation if necessary (default false)
+* unattended_upgrades[:enable_upgrades] - enable or disable unattended upgrades (default true)
 
 = Usage
 
