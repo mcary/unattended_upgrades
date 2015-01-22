@@ -19,3 +19,8 @@ attribute "unattended_upgrades/auto_reboot",
   :display_name => "Unattended Upgrade Auto-Reboot",
   :description => "Whether to reboot unattended when suggested by package updates",
   :default => "false"
+
+attribute "unattended_upgrades/enable_upgrades",
+  :display_name => "Unattended Upgrade Enable Upgrades",
+  :description => "Whether to enable or disable unattended upgrades",
+  :default => "true"
