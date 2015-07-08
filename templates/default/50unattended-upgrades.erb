@@ -21,14 +21,8 @@ APT::Periodic::MinAge "30";
 
 // Automatically upgrade packages from these (origin, archive) pairs
 Unattended-Upgrade::Allowed-Origins {
-    "Ubuntu lucid-security";
-    "Ubuntu lucid-updates";
-    // Not sure how safe this is... included initramfs-tools and an apt library
-    "Ubuntu lucid";
-    // ${distro_id} and ${distro_codename} will be automatically expanded
-    // (Actually, the "${...}" vars won't be expanded. --marcel)
-    "${distro_id} ${distro_codename}-security";
-    "${distro_id} ${distro_codename}-updates";
+    "<%= node[:platform] %> <%= node[:lsb][:codename] %>-security";
+    "<%= node[:platform] %> <%= node[:lsb][:codename] %>-updates";
 };
 
 // List of packages to not update
