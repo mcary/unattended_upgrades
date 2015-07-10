@@ -24,3 +24,8 @@ attribute "unattended_upgrades/enable_upgrades",
   :display_name => "Unattended Upgrade Enable Upgrades",
   :description => "Whether to enable or disable unattended upgrades",
   :default => "true"
+
+  attribute "unattended_upgrades/blacklist",
+    :display_name => "Unattended Upgrade Blacklist",
+    :description => "Array of package names to not be upgraded",
+    :default => "[]"
