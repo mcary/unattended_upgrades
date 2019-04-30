@@ -1,3 +1,6 @@
 .rake_test_cache
 
 metadata.json
+
+.kitchen
+Berksfile.lock
